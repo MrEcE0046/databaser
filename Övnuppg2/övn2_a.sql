@@ -89,3 +89,8 @@ SELECT
     FORMAT(SUM(CASE WHEN ICAO IS NULL THEN 1 ELSE 0 END) / CAST(COUNT(IATA) AS FLOAT), 'p') AS [Saknar ICAO i %]
 FROM #Airports
 GROUP BY RIGHT(RTRIM([Location served]), CHARINDEX(',', REVERSE(RTRIM([Location served]))+',')-2);
+
+SELECT * FROM company.employees;
+SELECT * FROM company.employee_territory;
+SELECT * FROM company.orders;
+
