@@ -57,8 +57,8 @@ ORDER BY
     TotaltSålda DESC;
 
 /*
-Vilka butiker som sålt mest
-Kan vara intressant för ledningen att ha en översikt om det är någon butik som underpresterar.
+Vilka butiker som sålt mest.
+Kan vara intressant för ledningen att ha en översikt om det är någon butik som underpresterar eller motsvarande.
 */
 SELECT TOP 3
     bt.Butiksnamn,
